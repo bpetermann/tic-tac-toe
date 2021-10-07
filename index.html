@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="grid-container">
+      <h1>Tic-Tac-Toe</h1>
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-</head>
+      <button id="btnPlayer1" type="submit" data-rel="back">Player 1</button>
+      <input
+        id="player1"
+        type="text"
+        placeholder="Title"
+        value="Player 1"
+        autocomplete="off"
+        maxlength="30"
+      />
+      <button id="btnPlayer2" type="submit" data-rel="back">Player 2</button>
+      <input
+        id="player2"
+        type="text"
+        placeholder="Title"
+        value="Player 2"
+        autocomplete="off"
+        maxlength="30"
+      />
 
-<body>
-  <button id="btnPlayer1" type="submit" data-rel="back" >Player1</button>
-  <input  id="player1"    type="text"   placeholder="Title"  value="player1"  autocomplete="off"  maxlength="30"/>
-  <button id="btnPlayer2" type="submit" data-rel="back" >Player2</button>
-  <input  id="player2"    type="text"   placeholder="Title"  value="player2"  autocomplete="off"  maxlength="30"/>
+      <div id="position">
+        <div id="container"></div>
+      </div>
 
-  <div id="container"></div>
+      <button id="reload"><img alt="Refresh" /></button>
 
-  <div id="output"></div>
-    
-</body>
-<script type="text/javascript" src="script.js"></script>
+      <div id="output"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
