@@ -15,14 +15,12 @@ const gameflow = (() => {
   btnPlayer1.addEventListener('click', () => {
     const player1Name = document.getElementById('player1').value;
     player1 = playerFactory(player1Name);
-    document.getElementById('player1').value = '';
     return { player1 };
   });
 
   btnPlayer2.addEventListener('click', () => {
     const player2Name = document.getElementById('player2').value;
     player2 = playerFactory(player2Name);
-    document.getElementById('player2').value = '';
     return { player2 };
   });
 

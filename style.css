@@ -14,7 +14,6 @@ body {
   font-size: 22px;
 }
 
-.grid,
 body {
   font-family: 'Permanent Marker', cursive;
   font-size: 22px;
@@ -39,12 +38,18 @@ h1 {
 }
 
 .grid {
-  background-color: transparent;
-  border: 0.5px solid #fff;
+  background-color: #fff;
+  border: 3px solid #4c5c68;
+  color: #000;
   align-items: center;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
   font-size: 65px;
-  padding: 0px 10px 50px 15px;
+  padding: 0px 10px 55px 15px;
+  color: rgba(31, 75, 100, 0.7);
+  text-shadow: 0 0 4px rgba(31, 75, 100, 0.6);
+}
+
+.grid:hover {
+  background-color: #9baebc;
 }
 
 #output {
@@ -54,27 +59,66 @@ h1 {
 
 #player1 {
   border: none;
+  color: #1f4b64;
+  padding-left: 10px;
+  margin-left: 0.5em;
 }
 
 #player2 {
   border: none;
+  color: #1f4b64;
+  padding-left: 10px;
+  margin-left: 0.5em;
 }
 
-#btnPlayer2 {
-  margin-left: 2em;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
+#btnPlayer2,
 #btnPlayer1 {
   margin-left: 2em;
   padding-left: 20px;
   padding-right: 20px;
+  background-image: linear-gradient(
+    to right top,
+    #427e8d,
+    #3e8592,
+    #3a8c96,
+    #37939a,
+    #359a9c,
+    #35a09e,
+    #36a69f,
+    #39ac9f,
+    #3fb29f,
+    #46b99e,
+    #4fbf9c,
+    #59c59a
+  );
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.4);
 }
 
 #reload {
   padding-left: 20px;
   padding-right: 20px;
+  background-image: linear-gradient(
+    to right top,
+    #427e8d,
+    #3e8592,
+    #3a8c96,
+    #37939a,
+    #359a9c,
+    #35a09e,
+    #36a69f,
+    #39ac9f,
+    #3fb29f,
+    #46b99e,
+    #4fbf9c,
+    #59c59a
+  );
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.4);
 }
 
 #reload:hover,
@@ -86,7 +130,7 @@ h1 {
 @media only screen and (max-width: 960px) {
   #grid-container {
     display: grid;
-    grid-template-rows: 150px 50px 50px 50px 50px auto 50px;
+    grid-template-rows: 125px 50px 50px 50px 50px auto 50px;
     grid-template-columns: 1fr;
     justify-items: center;
     row-gap: 20px;
@@ -101,7 +145,7 @@ h1 {
       'refresh';
   }
   body {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   h1 {
@@ -112,24 +156,27 @@ h1 {
   #player1 {
     grid-area: player1;
     text-align: center;
-    width: 325px;
+    margin: 0px;
+    width: 330px;
   }
 
   #btnPlayer1 {
     grid-area: player1btn;
     width: 330px;
+    margin: 0px;
     margin-left: 0em;
   }
 
   #player2 {
     grid-area: player2;
     text-align: center;
-    width: 325px;
+    margin: 0px;
+    width: 330px;
   }
 
   #btnPlayer2 {
     grid-area: player2btn;
-    margin-left: 0px;
+    margin: 0px;
     width: 330px;
   }
 
@@ -147,6 +194,6 @@ h1 {
   #reload {
     grid-area: refresh;
     height: 50px;
-    width: 360px;
+    width: 330px;
   }
 }
