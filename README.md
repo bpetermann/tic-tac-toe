@@ -1,5 +1,10 @@
-Assignment:
-A Tic Tac Toe game you can play in your browser.
+# Tic Tac Toe
 
-Coming from: [theodinproject](https://www.theodinproject.com)<br>
-View Live: [here](https://bpetermann.github.io/tic-tac-toe/)
+## Project Overview
+
+### Description
+- A Tic Tac Toe game you can play in your browser
+- [View Live](https://bpetermann.github.io/tic-tac-toe/)
+
+### Thanks
+- [theodinproject](https://www.theodinproject.com)<br>
